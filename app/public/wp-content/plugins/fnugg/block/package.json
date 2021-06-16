@@ -1,0 +1,28 @@
+{
+  "name": "Fnugg",
+  "version": "1.0.0",
+  "description": "Fnugg block",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annalytic/dekode-case.git"
+  },
+  "keywords": [
+    "fnugg"
+  ],
+  "author": "Anna Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annalytic/dekode-case/issues"
+  },
+  "homepage": "https://github.com/annalytic/dekode-case#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "16.1.2"
+  },
+	"scripts": {
+		"build": "wp-scripts build"
+	}
+}
