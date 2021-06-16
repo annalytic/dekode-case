@@ -10,5 +10,7 @@ registerBlockType( name, {
 	icon: 'smiley',
 	category: 'design',
 	edit,
-	save: () => <div>Hola, mundo!</div>,
+	save: () => {
+		return null;
+	}
 } );

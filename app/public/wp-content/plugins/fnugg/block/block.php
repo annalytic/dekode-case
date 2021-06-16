@@ -7,6 +7,10 @@ declare( strict_types=1 );
 
 namespace Dekode\Fnugg;
 
+require_once plugin_dir_path( __FILE__  ) . 'src/template.php';
+
+use function Dekode\Fnugg\Template\render_template;
+
 /**
  * Register block
  */
@@ -25,7 +29,14 @@ function register_block() {
 	// Register editor and frontend style.
 
 	// Register block from metadata.
-	register_block_type_from_metadata( plugin_dir_path( __FILE__ ) . '/src' );
+	register_block_type_from_metadata(
+		plugin_dir_path( __FILE__ ) . '/src',
+		[
+			'render_callback' => function( array $attributes ) : string {
+				return render_template( $attributes );
+			},
+		]
+ );
 
 	// Localize REST route.
 	wp_localize_script(

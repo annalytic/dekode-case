@@ -1,14 +1,24 @@
-import { FormTokenField, PanelBody } from '@wordpress/components';
+/**
+ * WordPress dependencies
+ */
+import {
+	FormTokenField,
+	PanelBody,
+	Disabled
+} from '@wordpress/components';
 import { InspectorControls } from '@wordpress/block-editor';
 import { useState } from '@wordpress/element';
+import ServerSideRender from '@wordpress/server-side-render';
 
 function Edit( {
 	attributes,
 	setAttributes,
 	isSelected,
 } ) {
+	const { resort } = attributes;
 	const [ suggestions, setSuggestions ] = useState( [] );
-	const [ selectedResort, setSelectedResort ] = useState();
+
+	console.log(resort);
 
 	const getSuggestions = ( search ) => {
 		if ( search.length > 2 ) {
@@ -17,8 +27,7 @@ function Edit( {
 			fetch( url )
 				.then( response => response.json() )
 				.then( result => {
-					setSuggestions(result)
-					console.log(result);
+					setSuggestions( result );
 				} );
 		}
 
@@ -30,9 +39,9 @@ function Edit( {
 			<InspectorControls>
 				<PanelBody title={ 'Settings' }>
 					<FormTokenField
-						value={ selectedResort }
+						value={ resort }
 						suggestions={ suggestions }
-						onChange={ ( tokens ) => setState( { tokens } ) }
+						onChange={ ( value ) => setAttributes( { resort: value } ) }
 						label={ 'Select Resort' }
 						onInputChange={ ( value ) => getSuggestions( value ) }
 						maxLength={ 1 }
@@ -41,6 +50,12 @@ function Edit( {
 			</InspectorControls>
 
 			<div>hello</div>
+			<Disabled>
+				<ServerSideRender
+					block="dekode/fnugg"
+					attributes={ attributes }
+				/>
+			</Disabled>
 		</>
 	)
 }
