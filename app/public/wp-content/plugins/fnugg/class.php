@@ -61,7 +61,13 @@ class Fnugg_API {
 
 		$json_response = json_decode( wp_remote_retrieve_body( $response ) );
 
-		return [ $json_response ];
+		$formatted_response = [];
+
+		foreach ( $json_response->result as $key=>$suggestion ) {
+			array_push( $formatted_response, $suggestion->name );
+		}
+
+		return $formatted_response;
 	}
 
 	public function get_resort( $request ) : array {
@@ -101,6 +107,8 @@ class Fnugg_API {
 			'success' => 0,
 			'message' => 'No resort by that name',
 		];		
+
+		return [ $json_response ];
 	}
 }
 ?>

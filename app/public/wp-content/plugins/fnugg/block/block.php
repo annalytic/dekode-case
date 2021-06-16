@@ -29,7 +29,7 @@ function register_block() {
 
 	// Localize REST route.
 	wp_localize_script(
-		'dekode-fnugg',
+		'fnugg-editor', //why?
 		'dekodeFnugg',
 		[
 			'rest' => get_rest_url(),

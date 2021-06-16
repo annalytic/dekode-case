@@ -2890,3 +2890,313 @@ Stack trace:
 [16-Jun-2021 19:45:57 UTC] PHP  11. WP_REST_Server->send_headers() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:444
 [16-Jun-2021 19:45:57 UTC] PHP  12. WP_REST_Server->send_header() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1654
 [16-Jun-2021 19:45:57 UTC] PHP  13. header() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1642
+[16-Jun-2021 20:25:03 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 65
+[16-Jun-2021 20:25:11 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 65
+[16-Jun-2021 20:25:11 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php on line 5313
+[16-Jun-2021 20:25:11 UTC] PHP Stack trace:
+[16-Jun-2021 20:25:11 UTC] PHP   1. WP_Fatal_Error_Handler->handle() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:0
+[16-Jun-2021 20:25:11 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:57
+[16-Jun-2021 20:25:11 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:152
+[16-Jun-2021 20:25:11 UTC] PHP   4. wp_die() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:233
+[16-Jun-2021 20:25:11 UTC] PHP   5. _default_wp_die_handler() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3421
+[16-Jun-2021 20:25:11 UTC] PHP   6. wp_robots() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3497
+[16-Jun-2021 20:25:11 UTC] PHP   7. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:32
+[16-Jun-2021 20:25:11 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 20:25:11 UTC] PHP   9. wp_robots_noindex_embeds() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:25:11 UTC] PHP  10. is_embed() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:93
+[16-Jun-2021 20:25:11 UTC] PHP  11. _doing_it_wrong() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/query.php:881
+[16-Jun-2021 20:25:11 UTC] PHP  12. trigger_error() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:5313
+[16-Jun-2021 20:25:11 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php on line 5313
+[16-Jun-2021 20:25:11 UTC] PHP Stack trace:
+[16-Jun-2021 20:25:11 UTC] PHP   1. WP_Fatal_Error_Handler->handle() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:0
+[16-Jun-2021 20:25:11 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:57
+[16-Jun-2021 20:25:11 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:152
+[16-Jun-2021 20:25:11 UTC] PHP   4. wp_die() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:233
+[16-Jun-2021 20:25:11 UTC] PHP   5. _default_wp_die_handler() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3421
+[16-Jun-2021 20:25:11 UTC] PHP   6. wp_robots() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3497
+[16-Jun-2021 20:25:11 UTC] PHP   7. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:32
+[16-Jun-2021 20:25:11 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 20:25:11 UTC] PHP   9. wp_robots_noindex_search() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:25:11 UTC] PHP  10. is_search() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:119
+[16-Jun-2021 20:25:11 UTC] PHP  11. _doing_it_wrong() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/query.php:699
+[16-Jun-2021 20:25:11 UTC] PHP  12. trigger_error() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:5313
+[16-Jun-2021 20:25:31 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 65
+[16-Jun-2021 20:25:31 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php on line 5313
+[16-Jun-2021 20:25:31 UTC] PHP Stack trace:
+[16-Jun-2021 20:25:31 UTC] PHP   1. WP_Fatal_Error_Handler->handle() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:0
+[16-Jun-2021 20:25:31 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:57
+[16-Jun-2021 20:25:31 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:152
+[16-Jun-2021 20:25:31 UTC] PHP   4. wp_die() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:233
+[16-Jun-2021 20:25:31 UTC] PHP   5. _default_wp_die_handler() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3421
+[16-Jun-2021 20:25:31 UTC] PHP   6. wp_robots() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3497
+[16-Jun-2021 20:25:31 UTC] PHP   7. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:32
+[16-Jun-2021 20:25:31 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 20:25:31 UTC] PHP   9. wp_robots_noindex_embeds() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:25:31 UTC] PHP  10. is_embed() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:93
+[16-Jun-2021 20:25:31 UTC] PHP  11. _doing_it_wrong() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/query.php:881
+[16-Jun-2021 20:25:31 UTC] PHP  12. trigger_error() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:5313
+[16-Jun-2021 20:25:31 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php on line 5313
+[16-Jun-2021 20:25:31 UTC] PHP Stack trace:
+[16-Jun-2021 20:25:31 UTC] PHP   1. WP_Fatal_Error_Handler->handle() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:0
+[16-Jun-2021 20:25:31 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:57
+[16-Jun-2021 20:25:31 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:152
+[16-Jun-2021 20:25:31 UTC] PHP   4. wp_die() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:233
+[16-Jun-2021 20:25:31 UTC] PHP   5. _default_wp_die_handler() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3421
+[16-Jun-2021 20:25:31 UTC] PHP   6. wp_robots() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3497
+[16-Jun-2021 20:25:31 UTC] PHP   7. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:32
+[16-Jun-2021 20:25:31 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 20:25:31 UTC] PHP   9. wp_robots_noindex_search() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:25:31 UTC] PHP  10. is_search() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:119
+[16-Jun-2021 20:25:31 UTC] PHP  11. _doing_it_wrong() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/query.php:699
+[16-Jun-2021 20:25:31 UTC] PHP  12. trigger_error() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:5313
+[16-Jun-2021 20:25:31 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 65
+[16-Jun-2021 20:25:31 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php on line 5313
+[16-Jun-2021 20:25:31 UTC] PHP Stack trace:
+[16-Jun-2021 20:25:31 UTC] PHP   1. WP_Fatal_Error_Handler->handle() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:0
+[16-Jun-2021 20:25:31 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:57
+[16-Jun-2021 20:25:31 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:152
+[16-Jun-2021 20:25:31 UTC] PHP   4. wp_die() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:233
+[16-Jun-2021 20:25:31 UTC] PHP   5. _default_wp_die_handler() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3421
+[16-Jun-2021 20:25:31 UTC] PHP   6. wp_robots() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3497
+[16-Jun-2021 20:25:31 UTC] PHP   7. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:32
+[16-Jun-2021 20:25:31 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 20:25:31 UTC] PHP   9. wp_robots_noindex_embeds() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:25:31 UTC] PHP  10. is_embed() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:93
+[16-Jun-2021 20:25:31 UTC] PHP  11. _doing_it_wrong() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/query.php:881
+[16-Jun-2021 20:25:31 UTC] PHP  12. trigger_error() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:5313
+[16-Jun-2021 20:25:31 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php on line 5313
+[16-Jun-2021 20:25:31 UTC] PHP Stack trace:
+[16-Jun-2021 20:25:31 UTC] PHP   1. WP_Fatal_Error_Handler->handle() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:0
+[16-Jun-2021 20:25:31 UTC] PHP   2. WP_Fatal_Error_Handler->display_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:57
+[16-Jun-2021 20:25:31 UTC] PHP   3. WP_Fatal_Error_Handler->display_default_error_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:152
+[16-Jun-2021 20:25:31 UTC] PHP   4. wp_die() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-fatal-error-handler.php:233
+[16-Jun-2021 20:25:31 UTC] PHP   5. _default_wp_die_handler() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3421
+[16-Jun-2021 20:25:31 UTC] PHP   6. wp_robots() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:3497
+[16-Jun-2021 20:25:31 UTC] PHP   7. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:32
+[16-Jun-2021 20:25:31 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 20:25:31 UTC] PHP   9. wp_robots_noindex_search() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:25:31 UTC] PHP  10. is_search() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/robots-template.php:119
+[16-Jun-2021 20:25:31 UTC] PHP  11. _doing_it_wrong() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/query.php:699
+[16-Jun-2021 20:25:31 UTC] PHP  12. trigger_error() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:5313
+[16-Jun-2021 20:25:58 UTC] PHP Notice:  Trying to get property 'name' of non-object in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 66
+[16-Jun-2021 20:25:58 UTC] PHP Stack trace:
+[16-Jun-2021 20:25:58 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 20:25:58 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 20:25:58 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 20:25:58 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 20:25:58 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 20:25:58 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 20:25:58 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 20:25:58 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 20:25:58 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:25:58 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 20:25:58 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 20:25:58 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 20:25:58 UTC] PHP  13. Fnugg_API->get_suggestions() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 20:25:58 UTC] PHP Notice:  Trying to get property 'name' of non-object in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 66
+[16-Jun-2021 20:25:58 UTC] PHP Stack trace:
+[16-Jun-2021 20:25:58 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 20:25:58 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 20:25:58 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 20:25:58 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 20:25:58 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 20:25:58 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 20:25:58 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 20:25:58 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 20:25:58 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:25:58 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 20:25:58 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 20:25:58 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 20:25:58 UTC] PHP  13. Fnugg_API->get_suggestions() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 20:25:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:66) in /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php on line 1642
+[16-Jun-2021 20:25:58 UTC] PHP Stack trace:
+[16-Jun-2021 20:25:58 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 20:25:58 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 20:25:58 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 20:25:58 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 20:25:58 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 20:25:58 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 20:25:58 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 20:25:58 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 20:25:58 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:25:58 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 20:25:58 UTC] PHP  11. WP_REST_Server->send_headers() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:444
+[16-Jun-2021 20:25:58 UTC] PHP  12. WP_REST_Server->send_header() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1654
+[16-Jun-2021 20:25:58 UTC] PHP  13. header() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1642
+[16-Jun-2021 20:26:36 UTC] PHP Notice:  Trying to get property 'name' of non-object in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 66
+[16-Jun-2021 20:26:36 UTC] PHP Stack trace:
+[16-Jun-2021 20:26:36 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 20:26:36 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 20:26:36 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 20:26:36 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 20:26:36 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 20:26:36 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 20:26:36 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 20:26:36 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 20:26:36 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:26:36 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 20:26:36 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 20:26:36 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 20:26:36 UTC] PHP  13. Fnugg_API->get_suggestions() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 20:26:36 UTC] PHP Notice:  Trying to get property 'name' of non-object in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 66
+[16-Jun-2021 20:26:36 UTC] PHP Stack trace:
+[16-Jun-2021 20:26:36 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 20:26:36 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 20:26:36 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 20:26:36 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 20:26:36 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 20:26:36 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 20:26:36 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 20:26:36 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 20:26:36 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:26:36 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 20:26:36 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 20:26:36 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 20:26:36 UTC] PHP  13. Fnugg_API->get_suggestions() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 20:26:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:66) in /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php on line 1642
+[16-Jun-2021 20:26:36 UTC] PHP Stack trace:
+[16-Jun-2021 20:26:36 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 20:26:36 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 20:26:36 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 20:26:36 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 20:26:36 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 20:26:36 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 20:26:36 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 20:26:36 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 20:26:36 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:26:36 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 20:26:36 UTC] PHP  11. WP_REST_Server->send_headers() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:444
+[16-Jun-2021 20:26:36 UTC] PHP  12. WP_REST_Server->send_header() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1654
+[16-Jun-2021 20:26:36 UTC] PHP  13. header() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1642
+[16-Jun-2021 20:29:31 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Fnugg_API::get_suggestions() must be of the type array, object returned in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:72
+Stack trace:
+#0 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(1139): Fnugg_API->get_suggestions(Object(WP_REST_Request))
+#1 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/dekode/fnugg/v...', Array, NULL)
+#2 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/dekode/fnugg/v...')
+#4 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#5 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp- in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 72
+[16-Jun-2021 20:31:09 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:67
+Stack trace:
+#0 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(1139): Fnugg_API->get_suggestions(Object(WP_REST_Request))
+#1 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/dekode/fnugg/v...', Array, NULL)
+#2 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/dekode/fnugg/v...')
+#4 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#5 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array) in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 67
+[16-Jun-2021 20:32:41 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:67
+Stack trace:
+#0 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(1139): Fnugg_API->get_suggestions(Object(WP_REST_Request))
+#1 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/dekode/fnugg/v...', Array, NULL)
+#2 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/dekode/fnugg/v...')
+#4 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#5 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array) in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 67
+[16-Jun-2021 20:32:42 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:67
+Stack trace:
+#0 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(1139): Fnugg_API->get_suggestions(Object(WP_REST_Request))
+#1 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/dekode/fnugg/v...', Array, NULL)
+#2 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/dekode/fnugg/v...')
+#4 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#5 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array) in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 67
+[16-Jun-2021 20:33:04 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:67
+Stack trace:
+#0 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(1139): Fnugg_API->get_suggestions(Object(WP_REST_Request))
+#1 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/dekode/fnugg/v...', Array, NULL)
+#2 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/dekode/fnugg/v...')
+#4 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#5 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array) in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 67
+[16-Jun-2021 20:33:34 UTC] PHP Notice:  Undefined variable: formatted_respons in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 70
+[16-Jun-2021 20:33:34 UTC] PHP Stack trace:
+[16-Jun-2021 20:33:34 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 20:33:34 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 20:33:34 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 20:33:34 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 20:33:34 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 20:33:34 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 20:33:34 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 20:33:34 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 20:33:34 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:33:34 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 20:33:34 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 20:33:34 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 20:33:34 UTC] PHP  13. Fnugg_API->get_suggestions() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 20:33:34 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Fnugg_API::get_suggestions() must be of the type array, null returned in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:70
+Stack trace:
+#0 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(1139): Fnugg_API->get_suggestions(Object(WP_REST_Request))
+#1 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/dekode/fnugg/v...', Array, NULL)
+#2 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/dekode/fnugg/v...')
+#4 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#5 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-ho in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 70
+[16-Jun-2021 20:33:35 UTC] PHP Notice:  Undefined variable: formatted_respons in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 70
+[16-Jun-2021 20:33:35 UTC] PHP Stack trace:
+[16-Jun-2021 20:33:35 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 20:33:35 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 20:33:35 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 20:33:35 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 20:33:35 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 20:33:35 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 20:33:35 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 20:33:35 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 20:33:35 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:33:35 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 20:33:35 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 20:33:35 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 20:33:35 UTC] PHP  13. Fnugg_API->get_suggestions() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 20:33:35 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Fnugg_API::get_suggestions() must be of the type array, null returned in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:70
+Stack trace:
+#0 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(1139): Fnugg_API->get_suggestions(Object(WP_REST_Request))
+#1 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/dekode/fnugg/v...', Array, NULL)
+#2 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/dekode/fnugg/v...')
+#4 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#5 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-ho in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 70
+[16-Jun-2021 20:33:46 UTC] PHP Notice:  Undefined variable: formatted_respons in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 70
+[16-Jun-2021 20:33:46 UTC] PHP Stack trace:
+[16-Jun-2021 20:33:46 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 20:33:46 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 20:33:46 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 20:33:46 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 20:33:46 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 20:33:46 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 20:33:46 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 20:33:46 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 20:33:46 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:33:46 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 20:33:46 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 20:33:46 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 20:33:46 UTC] PHP  13. Fnugg_API->get_suggestions() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 20:33:46 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Fnugg_API::get_suggestions() must be of the type array, null returned in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:70
+Stack trace:
+#0 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(1139): Fnugg_API->get_suggestions(Object(WP_REST_Request))
+#1 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/dekode/fnugg/v...', Array, NULL)
+#2 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/dekode/fnugg/v...')
+#4 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#5 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-ho in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 70
+[16-Jun-2021 20:33:46 UTC] PHP Notice:  Undefined variable: formatted_respons in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 70
+[16-Jun-2021 20:33:46 UTC] PHP Stack trace:
+[16-Jun-2021 20:33:46 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 20:33:46 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 20:33:46 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 20:33:46 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 20:33:46 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 20:33:46 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 20:33:46 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 20:33:46 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 20:33:46 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 20:33:46 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 20:33:46 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 20:33:46 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 20:33:46 UTC] PHP  13. Fnugg_API->get_suggestions() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 20:33:46 UTC] PHP Fatal error:  Uncaught TypeError: Return value of Fnugg_API::get_suggestions() must be of the type array, null returned in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php:70
+Stack trace:
+#0 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(1139): Fnugg_API->get_suggestions(Object(WP_REST_Request))
+#1 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/dekode/fnugg/v...', Array, NULL)
+#2 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/dekode/fnugg/v...')
+#4 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#5 /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-ho in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/class.php on line 70
