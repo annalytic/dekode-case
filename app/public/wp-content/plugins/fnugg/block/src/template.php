@@ -15,7 +15,8 @@ namespace Dekode\Fnugg\Template;
  * @return string
  */
 function render_template( array $attributes ): string {
-	$resort = $attributes['resort'][0];
+	$resort = isset( $attributes['resort'][0] );
+
 	ob_start();
 	if ( ! empty( $resort ) ) {
 	

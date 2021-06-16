@@ -3958,3 +3958,142 @@ Stack trace:
 [16-Jun-2021 21:28:29 UTC] PHP  19. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
 [16-Jun-2021 21:28:29 UTC] PHP  20. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:35-37}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
 [16-Jun-2021 21:28:29 UTC] PHP  21. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:36
+[16-Jun-2021 21:31:04 UTC] PHP Notice:  Undefined index: resort in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/src/template.php on line 18
+[16-Jun-2021 21:31:04 UTC] PHP Stack trace:
+[16-Jun-2021 21:31:04 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 21:31:04 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 21:31:04 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 21:31:04 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 21:31:04 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 21:31:04 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 21:31:04 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 21:31:04 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 21:31:04 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 21:31:04 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 21:31:04 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 21:31:04 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 21:31:04 UTC] PHP  13. WP_REST_Block_Renderer_Controller->get_item() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 21:31:04 UTC] PHP  14. render_block() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/endpoints/class-wp-rest-block-renderer-controller.php:186
+[16-Jun-2021 21:31:04 UTC] PHP  15. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
+[16-Jun-2021 21:31:04 UTC] PHP  16. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:35-37}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
+[16-Jun-2021 21:31:04 UTC] PHP  17. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:36
+[16-Jun-2021 21:31:04 UTC] PHP Notice:  Undefined offset: 0 in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/src/template.php on line 18
+[16-Jun-2021 21:31:04 UTC] PHP Stack trace:
+[16-Jun-2021 21:31:04 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 21:31:04 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 21:31:04 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 21:31:04 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 21:31:04 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 21:31:04 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 21:31:04 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 21:31:04 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 21:31:04 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 21:31:04 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 21:31:04 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 21:31:04 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 21:31:04 UTC] PHP  13. WP_REST_Autosaves_Controller->create_item() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 21:31:04 UTC] PHP  14. WP_REST_Autosaves_Controller->prepare_item_for_response() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:239
+[16-Jun-2021 21:31:04 UTC] PHP  15. WP_REST_Revisions_Controller->prepare_item_for_response() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:406
+[16-Jun-2021 21:31:04 UTC] PHP  16. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:603
+[16-Jun-2021 21:31:04 UTC] PHP  17. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 21:31:04 UTC] PHP  18. do_blocks() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 21:31:04 UTC] PHP  19. render_block() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:837
+[16-Jun-2021 21:31:04 UTC] PHP  20. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
+[16-Jun-2021 21:31:04 UTC] PHP  21. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:35-37}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
+[16-Jun-2021 21:31:04 UTC] PHP  22. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:36
+[16-Jun-2021 21:31:36 UTC] PHP Notice:  Undefined index: resort in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/src/template.php on line 18
+[16-Jun-2021 21:31:36 UTC] PHP Stack trace:
+[16-Jun-2021 21:31:36 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 21:31:36 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 21:31:36 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 21:31:36 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 21:31:36 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 21:31:36 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 21:31:36 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 21:31:36 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 21:31:36 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 21:31:36 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 21:31:36 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 21:31:36 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 21:31:36 UTC] PHP  13. WP_REST_Block_Renderer_Controller->get_item() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 21:31:36 UTC] PHP  14. render_block() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/endpoints/class-wp-rest-block-renderer-controller.php:186
+[16-Jun-2021 21:31:36 UTC] PHP  15. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
+[16-Jun-2021 21:31:36 UTC] PHP  16. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:35-37}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
+[16-Jun-2021 21:31:36 UTC] PHP  17. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:36
+[16-Jun-2021 21:31:37 UTC] PHP Notice:  Undefined offset: 0 in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/src/template.php on line 18
+[16-Jun-2021 21:31:37 UTC] PHP Stack trace:
+[16-Jun-2021 21:31:37 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 21:31:37 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 21:31:37 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[16-Jun-2021 21:31:37 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[16-Jun-2021 21:31:37 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[16-Jun-2021 21:31:37 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[16-Jun-2021 21:31:37 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[16-Jun-2021 21:31:37 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[16-Jun-2021 21:31:37 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 21:31:37 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[16-Jun-2021 21:31:37 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[16-Jun-2021 21:31:37 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[16-Jun-2021 21:31:37 UTC] PHP  13. WP_REST_Posts_Controller->update_item() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[16-Jun-2021 21:31:37 UTC] PHP  14. WP_REST_Posts_Controller->prepare_item_for_response() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:881
+[16-Jun-2021 21:31:37 UTC] PHP  15. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1768
+[16-Jun-2021 21:31:37 UTC] PHP  16. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 21:31:37 UTC] PHP  17. do_blocks() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 21:31:37 UTC] PHP  18. render_block() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:837
+[16-Jun-2021 21:31:37 UTC] PHP  19. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
+[16-Jun-2021 21:31:37 UTC] PHP  20. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:35-37}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
+[16-Jun-2021 21:31:37 UTC] PHP  21. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:36
+[16-Jun-2021 21:31:38 UTC] PHP Notice:  Undefined offset: 0 in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/src/template.php on line 18
+[16-Jun-2021 21:31:38 UTC] PHP Stack trace:
+[16-Jun-2021 21:31:38 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 21:31:38 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 21:31:38 UTC] PHP   3. require_once() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:19
+[16-Jun-2021 21:31:38 UTC] PHP   4. include() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/template-loader.php:106
+[16-Jun-2021 21:31:38 UTC] PHP   5. get_template_part() /Users/anna/Local Sites/dekodecase/app/public/wp-content/themes/twentytwentyone/page.php:17
+[16-Jun-2021 21:31:38 UTC] PHP   6. locate_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/general-template.php:204
+[16-Jun-2021 21:31:38 UTC] PHP   7. load_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/template.php:676
+[16-Jun-2021 21:31:38 UTC] PHP   8. require() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/template.php:732
+[16-Jun-2021 21:31:38 UTC] PHP   9. the_content() /Users/anna/Local Sites/dekodecase/app/public/wp-content/themes/twentytwentyone/template-parts/content/content-page.php:29
+[16-Jun-2021 21:31:38 UTC] PHP  10. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/post-template.php:253
+[16-Jun-2021 21:31:38 UTC] PHP  11. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 21:31:38 UTC] PHP  12. do_blocks() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 21:31:38 UTC] PHP  13. render_block() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:837
+[16-Jun-2021 21:31:38 UTC] PHP  14. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
+[16-Jun-2021 21:31:38 UTC] PHP  15. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:35-37}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
+[16-Jun-2021 21:31:38 UTC] PHP  16. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:36
+[16-Jun-2021 21:32:49 UTC] PHP Notice:  Undefined offset: 0 in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/src/template.php on line 18
+[16-Jun-2021 21:32:49 UTC] PHP Stack trace:
+[16-Jun-2021 21:32:49 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 21:32:49 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 21:32:49 UTC] PHP   3. require_once() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:19
+[16-Jun-2021 21:32:49 UTC] PHP   4. include() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/template-loader.php:106
+[16-Jun-2021 21:32:49 UTC] PHP   5. get_template_part() /Users/anna/Local Sites/dekodecase/app/public/wp-content/themes/twentytwentyone/page.php:17
+[16-Jun-2021 21:32:49 UTC] PHP   6. locate_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/general-template.php:204
+[16-Jun-2021 21:32:49 UTC] PHP   7. load_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/template.php:676
+[16-Jun-2021 21:32:49 UTC] PHP   8. require() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/template.php:732
+[16-Jun-2021 21:32:49 UTC] PHP   9. the_content() /Users/anna/Local Sites/dekodecase/app/public/wp-content/themes/twentytwentyone/template-parts/content/content-page.php:29
+[16-Jun-2021 21:32:49 UTC] PHP  10. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/post-template.php:253
+[16-Jun-2021 21:32:49 UTC] PHP  11. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 21:32:49 UTC] PHP  12. do_blocks() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 21:32:49 UTC] PHP  13. render_block() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:837
+[16-Jun-2021 21:32:49 UTC] PHP  14. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
+[16-Jun-2021 21:32:49 UTC] PHP  15. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:35-37}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
+[16-Jun-2021 21:32:49 UTC] PHP  16. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:36
+[16-Jun-2021 21:32:51 UTC] PHP Notice:  Undefined offset: 0 in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/src/template.php on line 18
+[16-Jun-2021 21:32:51 UTC] PHP Stack trace:
+[16-Jun-2021 21:32:51 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[16-Jun-2021 21:32:51 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[16-Jun-2021 21:32:51 UTC] PHP   3. require_once() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:19
+[16-Jun-2021 21:32:51 UTC] PHP   4. include() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/template-loader.php:106
+[16-Jun-2021 21:32:51 UTC] PHP   5. get_template_part() /Users/anna/Local Sites/dekodecase/app/public/wp-content/themes/twentytwentyone/page.php:17
+[16-Jun-2021 21:32:51 UTC] PHP   6. locate_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/general-template.php:204
+[16-Jun-2021 21:32:51 UTC] PHP   7. load_template() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/template.php:676
+[16-Jun-2021 21:32:51 UTC] PHP   8. require() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/template.php:732
+[16-Jun-2021 21:32:51 UTC] PHP   9. the_content() /Users/anna/Local Sites/dekodecase/app/public/wp-content/themes/twentytwentyone/template-parts/content/content-page.php:29
+[16-Jun-2021 21:32:51 UTC] PHP  10. apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/post-template.php:253
+[16-Jun-2021 21:32:51 UTC] PHP  11. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:212
+[16-Jun-2021 21:32:51 UTC] PHP  12. do_blocks() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[16-Jun-2021 21:32:51 UTC] PHP  13. render_block() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:837
+[16-Jun-2021 21:32:51 UTC] PHP  14. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
+[16-Jun-2021 21:32:51 UTC] PHP  15. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:35-37}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
+[16-Jun-2021 21:32:51 UTC] PHP  16. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:36
