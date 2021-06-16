@@ -1,10 +1,11 @@
 {
-  "name": "Fnugg",
+  "name": "fnugg",
   "version": "1.0.0",
   "description": "Fnugg block",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"build": "wp-scripts build"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,5 @@
   "homepage": "https://github.com/annalytic/dekode-case#readme",
   "devDependencies": {
     "@wordpress/scripts": "16.1.2"
-  },
-	"scripts": {
-		"build": "wp-scripts build"
-	}
+  }
 }

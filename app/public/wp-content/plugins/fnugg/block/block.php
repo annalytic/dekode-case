@@ -16,7 +16,8 @@ function register_block() {
 		'fnugg-editor',
 		plugins_url( 'build/index.js', __FILE__ ),
 		$asset_file['dependencies'],
-		$asset_file['version']
+		$asset_file['version'],
+		false
 	);
 
 	// Register editor and frontend style.
