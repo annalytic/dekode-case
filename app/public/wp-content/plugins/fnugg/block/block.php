@@ -5,6 +5,8 @@
 
 declare( strict_types=1 );
 
+namespace Dekode\Fnugg;
+
 /**
  * Register block
  */
@@ -24,5 +26,14 @@ function register_block() {
 
 	// Register block from metadata.
 	register_block_type_from_metadata( plugin_dir_path( __FILE__ ) . '/src' );
+
+	// Localize REST route.
+	wp_localize_script(
+		'dekode-fnugg',
+		'dekodeFnugg',
+		[
+			'rest' => get_rest_url(),
+		]
+	);
 }
-add_action( 'init', 'register_block' );
+add_action( 'init', __NAMESPACE__ . '\\register_block' );

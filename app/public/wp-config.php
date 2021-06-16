@@ -37,6 +37,11 @@ define( 'DB_CHARSET', 'utf8' );
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+// Enable error reporting output to browser. Default value is false.
+define( 'WP_DEBUG', true );
+// log errors to `/wp-content/debug.log`. Useful when debugging code that does not output to browser.
+define('WP_DEBUG_LOG', true);
+
 /**
  * Authentication Unique Keys and Salts.
  *

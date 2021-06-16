@@ -4,7 +4,7 @@ function Edit( {
 	isSelected,
 } ) {
 	return (
-		<div>hello</div>
+		<div>field autocomplete</div>
 	)
 }
 
