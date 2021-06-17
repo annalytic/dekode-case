@@ -12,7 +12,7 @@ class Fnugg_API {
 		// Register rest route for suggestions.
 		register_rest_route(
 			'dekode/fnugg/v1',
-			'/get_suggestions', //wp-json/dekode/fnugg/v1/get_suggestions?search=fonna
+			'/get_suggestions',
 			[
 				'methods' => WP_REST_Server::READABLE,
 				'callback' => [ $this, 'get_suggestions' ],

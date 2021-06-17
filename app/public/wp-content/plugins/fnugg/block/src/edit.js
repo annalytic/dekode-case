@@ -20,7 +20,7 @@ function Edit( {
 	// States.
 	const [ suggestions, setSuggestions ] = useState( [] );
 
-	// Get suggestions.
+	// Get suggestions based on user input in FormTokenField.
 	const getSuggestions = ( search ) => {
 		if ( search.length > 2 ) {
 			const url = `${ window.dekodeFnugg.rest }dekode/fnugg/v1/get_suggestions?search=${ search }`;
@@ -42,7 +42,7 @@ function Edit( {
 		<>
 			<InspectorControls>
 				<PanelBody title={ 'Settings' }>
-					{ /* Use FormTokenField component to handle search for resorts */ }
+					{ /* Use FormTokenField component to handle search and suggestions for resorts. */ }
 					<FormTokenField
 						value={ resort }
 						suggestions={ suggestions }

@@ -10,7 +10,7 @@ namespace Dekode\Fnugg\Template;
 /**
  * Render template
  *
- * @param array $attributes the list of settings attributes.
+ * @param array $attributes List of settings attributes.
  *
  * @return string
  */

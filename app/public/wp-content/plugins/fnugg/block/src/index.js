@@ -5,6 +5,7 @@ import edit from './edit';
 
 const { name } = metadata;
 
+// Register block.
 registerBlockType( name, {
 	title: 'Fnugg',
 	icon: 'smiley',

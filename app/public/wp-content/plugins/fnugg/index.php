@@ -8,9 +8,6 @@
  * Text Domain: fnugg
  */
 
-
-// Silence is golden.
-
 require plugin_dir_path( __FILE__ ) . '/block/block.php';
 require plugin_dir_path( __FILE__ ) . '/class.php';
 
