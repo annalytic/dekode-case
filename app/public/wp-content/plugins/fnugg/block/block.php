@@ -26,8 +26,6 @@ function register_block() {
 		false
 	);
 
-	// Register editor and frontend style.
-
 	// Register block from metadata.
 	register_block_type_from_metadata(
 		plugin_dir_path( __FILE__ ) . '/src',

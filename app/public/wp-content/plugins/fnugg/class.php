@@ -47,11 +47,11 @@ class Fnugg_API {
 	/**
 	 * Get suggestions from Fnugg API.
 	 *
-	 * @param string $request Suggestion.
+	 * @param WP_REST_Request $request The WP_REST_Request.
 	 * 
-	 * @return array
+	 * @return WP_REST_Response
 	 */
-	public function get_suggestions( string $request ) : array {
+	public function get_suggestions( WP_REST_Request $request ) : WP_REST_Response {
 		$search = $request->get_param( 'search' );
 
 		$url = 'https://api.fnugg.no/suggest/autocomplete/?q=' . $search;
@@ -64,45 +64,68 @@ class Fnugg_API {
 			];
 		}
 
-		$json_response = json_decode( wp_remote_retrieve_body( $response ) );
+		// Retrieve information.
+		$response_code = wp_remote_retrieve_response_code( $request );
+		$response_message = wp_remote_retrieve_response_message( $request );
+		$response_body = json_decode( wp_remote_retrieve_body( $response ) );
 
-		$formatted_response = [];
+		if ( $response_body->total > 0 ) {
+			$formatted_response = [];
 
-		foreach ( $json_response->result as $key=>$suggestion ) {
-			array_push( $formatted_response, $suggestion->name );
+			foreach ( $response_body->result as $key=>$suggestion ) {
+				array_push( $formatted_response, $suggestion->name );
+			}
+	
+			return new WP_REST_Response(
+				[
+					'code' => 200,
+					'body' => $formatted_response
+				]
+		);
+		} else {
+			return new WP_REST_Response(
+				[
+					'status' => 404,
+					'body' => []
+				]
+			);
 		}
-
-		return $formatted_response;
 	}
 
 	/**
 	 * Get resort details from Fnugg API.
 	 * 
-	 * @param string $request Request.
+	 * @param WP_REST_Request $request The WP_REST_Request.
 	 *
-	 * @return array
+	 * @return WP_REST_Response
 	 */
-	public function get_resort( string $request ) : array {
+	public function get_resort( WP_REST_Request $request ) : WP_REST_Response {
+		// Get parameter from request.
 		$resort = $request->get_param( 'resort' );
 
+		// Sends HTTP request using GET method and returns its response.
 		$url = 'https://api.fnugg.no/search?q=' . $resort;
-		$response = wp_remote_get( $url );
+		$request= wp_remote_get( $url );
 
-		if ( is_wp_error( $response ) ) {
-			return [
-				'success' => 0,
-				'message' => 'Got WP_Error when sending request to ' . $url,
-			];
-		}
-
-		$json_response = json_decode( wp_remote_retrieve_body( $response ) );
+		// Retrieve information.
+		$response_code = wp_remote_retrieve_response_code( $request );
+		$response_message = wp_remote_retrieve_response_message( $request );
+		$response_body = json_decode( wp_remote_retrieve_body( $request ) );
 		
-		$source = $json_response->hits->hits;
+		// Grab correct information.
+		$source = $response_body->hits->hits;
+		
+		/*
+		 * Comment:
+		 * Better solution than below is to use ID of resort and do new call to /resort/id=?.
+		 * That way we are guaranteed one resort as response.
+		 */
 
+ 		// If source exists.
 		if ( ! empty( $source ) ) {
 			$source = $source[0]->_source;
-			$current_conditions = $json_response->hits->hits[0]->_source->conditions->current_report->top;
-	
+			$current_conditions = $response_body->hits->hits[0]->_source->conditions->current_report->top;
+			
 			$formatted_response = [
 				'name' => $source->name,
 				'image_url' => $source->images->image_full,
@@ -113,15 +136,21 @@ class Fnugg_API {
 				'wind_mps' => $current_conditions->wind->mps
 			];
 	
-			return $formatted_response;
+			return new WP_REST_Response(
+				[
+					'status' => $response_code,
+					'message' => $response_message,
+					'body' => $formatted_response,
+				]
+			);
+		} else {
+			return new WP_REST_Response(
+				[
+					'status' => 404,
+					'message' => 'No resort by that name.'
+				]
+			);
 		}
-
-		return [
-			'success' => 0,
-			'message' => 'No resort by that name',
-		];		
-
-		return $json_response;
 	}
 }
 ?>

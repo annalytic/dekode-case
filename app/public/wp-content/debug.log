@@ -5353,3 +5353,41 @@ Stack trace:
 [17-Jun-2021 07:41:46 UTC] PHP  15. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
 [17-Jun-2021 07:41:46 UTC] PHP  16. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:35-37}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
 [17-Jun-2021 07:41:46 UTC] PHP  17. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:36
+[17-Jun-2021 09:19:33 UTC] PHP Notice:  Undefined index: resort in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/src/template.php on line 18
+[17-Jun-2021 09:19:33 UTC] PHP Stack trace:
+[17-Jun-2021 09:19:33 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[17-Jun-2021 09:19:33 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[17-Jun-2021 09:19:33 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[17-Jun-2021 09:19:33 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[17-Jun-2021 09:19:33 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[17-Jun-2021 09:19:33 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[17-Jun-2021 09:19:33 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[17-Jun-2021 09:19:33 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[17-Jun-2021 09:19:33 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[17-Jun-2021 09:19:33 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[17-Jun-2021 09:19:33 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[17-Jun-2021 09:19:33 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[17-Jun-2021 09:19:33 UTC] PHP  13. WP_REST_Block_Renderer_Controller->get_item() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[17-Jun-2021 09:19:33 UTC] PHP  14. render_block() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/endpoints/class-wp-rest-block-renderer-controller.php:186
+[17-Jun-2021 09:19:33 UTC] PHP  15. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
+[17-Jun-2021 09:19:33 UTC] PHP  16. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:33-35}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
+[17-Jun-2021 09:19:33 UTC] PHP  17. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:34
+[17-Jun-2021 09:19:38 UTC] PHP Notice:  Undefined index: resort in /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/src/template.php on line 18
+[17-Jun-2021 09:19:38 UTC] PHP Stack trace:
+[17-Jun-2021 09:19:38 UTC] PHP   1. {main}() /Users/anna/Local Sites/dekodecase/app/public/index.php:0
+[17-Jun-2021 09:19:38 UTC] PHP   2. require() /Users/anna/Local Sites/dekodecase/app/public/index.php:17
+[17-Jun-2021 09:19:38 UTC] PHP   3. wp() /Users/anna/Local Sites/dekodecase/app/public/wp-blog-header.php:16
+[17-Jun-2021 09:19:38 UTC] PHP   4. WP->main() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/functions.php:1291
+[17-Jun-2021 09:19:38 UTC] PHP   5. WP->parse_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:750
+[17-Jun-2021 09:19:38 UTC] PHP   6. do_action_ref_array() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp.php:388
+[17-Jun-2021 09:19:38 UTC] PHP   7. WP_Hook->do_action() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/plugin.php:551
+[17-Jun-2021 09:19:38 UTC] PHP   8. WP_Hook->apply_filters() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:316
+[17-Jun-2021 09:19:38 UTC] PHP   9. rest_api_loaded() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-hook.php:292
+[17-Jun-2021 09:19:38 UTC] PHP  10. WP_REST_Server->serve_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api.php:354
+[17-Jun-2021 09:19:38 UTC] PHP  11. WP_REST_Server->dispatch() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:412
+[17-Jun-2021 09:19:38 UTC] PHP  12. WP_REST_Server->respond_to_request() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:985
+[17-Jun-2021 09:19:38 UTC] PHP  13. WP_REST_Block_Renderer_Controller->get_item() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/class-wp-rest-server.php:1139
+[17-Jun-2021 09:19:38 UTC] PHP  14. render_block() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/rest-api/endpoints/class-wp-rest-block-renderer-controller.php:186
+[17-Jun-2021 09:19:38 UTC] PHP  15. WP_Block->render() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/blocks.php:799
+[17-Jun-2021 09:19:38 UTC] PHP  16. Dekode\Fnugg\{closure:/Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:33-35}() /Users/anna/Local Sites/dekodecase/app/public/wp-includes/class-wp-block.php:221
+[17-Jun-2021 09:19:38 UTC] PHP  17. Dekode\Fnugg\Template\render_template() /Users/anna/Local Sites/dekodecase/app/public/wp-content/plugins/fnugg/block/block.php:34

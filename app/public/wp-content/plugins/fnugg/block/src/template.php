@@ -21,11 +21,13 @@ function render_template( array $attributes ) : string {
 	if ( ! empty( $resort ) ) {
 	
 		$url = get_rest_url() . 'dekode/fnugg/v1/get_resort?resort=' . $resort;
-		$response = wp_remote_get( $url );
+		$request= wp_remote_get( $url );
+		
+		$response_body = json_decode( wp_remote_retrieve_body( $request ) );
+		$response_code = wp_remote_retrieve_response_code( $request );
 
-		$json_response = json_decode( wp_remote_retrieve_body( $response ) );
-		$details = $json_response;
-
+		// Needs to add check for if response code is 200.
+		$details = $response_body->body;
 		?>
 		<div class="card">
 			<div class="card-header">

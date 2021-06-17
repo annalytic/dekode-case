@@ -14,9 +14,13 @@ function Edit( {
 	attributes,
 	setAttributes,
 } ) {
+	// Attributes.
 	const { resort } = attributes;
+	
+	// States.
 	const [ suggestions, setSuggestions ] = useState( [] );
 
+	// Get suggestions.
 	const getSuggestions = ( search ) => {
 		if ( search.length > 2 ) {
 			const url = `${ window.dekodeFnugg.rest }dekode/fnugg/v1/get_suggestions?search=${ search }`;
@@ -24,7 +28,10 @@ function Edit( {
 			fetch( url )
 				.then( response => response.json() )
 				.then( result => {
-					setSuggestions( result );
+					setSuggestions( result.body );
+				} )
+				.catch( error => {
+					console.error('Error:', error);
 				} );
 		}
 
@@ -35,6 +42,7 @@ function Edit( {
 		<>
 			<InspectorControls>
 				<PanelBody title={ 'Settings' }>
+					{ /* Use FormTokenField component to handle search for resorts */ }
 					<FormTokenField
 						value={ resort }
 						suggestions={ suggestions }
@@ -47,6 +55,7 @@ function Edit( {
 			</InspectorControls>
 
 			<Disabled>
+				{ /* Component used to server-side rendring preview of dynamic block to display in editor. */ }
 				<ServerSideRender
 					block="dekode/fnugg"
 					attributes={ attributes }
