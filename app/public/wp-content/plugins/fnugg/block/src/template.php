@@ -15,7 +15,7 @@ namespace Dekode\Fnugg\Template;
  * @return string
  */
 function render_template( array $attributes ) : string {
-	$resort = $attributes['resort'][0];
+	$resort = isset( $attributes['resort'][0] ) ? $attributes['resort'][0] : null;
 	
 	ob_start();
 	if ( ! empty( $resort ) ) {
@@ -60,7 +60,8 @@ function render_template( array $attributes ) : string {
 		<?php
 	} else {
 		?>
-			<p>Select a resort in right sidebar</p>
+			<p class="hide-in-fe">Select a resort in right sidebar</p>
+			<p class="hide-in-ed">No resort is chosen.</p>
 		<?php
 	}
 	return ob_get_clean();
