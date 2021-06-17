@@ -24,7 +24,6 @@ function render_template( array $attributes ) : string {
 		$response = wp_remote_get( $url );
 
 		$json_response = json_decode( wp_remote_retrieve_body( $response ) );
-		$details = $json_response[0];
 		$details = $json_response;
 
 		?>
