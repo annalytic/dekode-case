@@ -3,8 +3,6 @@
  * Handles REST API calls.
  */
 class Fnugg_API {
-	// Properties.
-	// Methods.
 	/**
 	 * Registers all REST routes.
 	 *
@@ -28,25 +26,32 @@ class Fnugg_API {
 			]
 		);
 
-				// Register rest route for getting resort.
-				register_rest_route(
-					'dekode/fnugg/v1',
-					'/get_resort',
-					[
-						'methods' => WP_REST_Server::READABLE,
-						'callback' => [ $this, 'get_resort' ],
-						'permission_callback' => '__return_true',
-						'args' => [
-							'resort' => [
-								'required' => true,
-								'type' => 'string',
-							],
-						],
-					]
-				);
+		// Register rest route for getting resort.
+		register_rest_route(
+			'dekode/fnugg/v1',
+			'/get_resort',
+			[
+				'methods' => WP_REST_Server::READABLE,
+				'callback' => [ $this, 'get_resort' ],
+				'permission_callback' => '__return_true',
+				'args' => [
+					'resort' => [
+						'required' => true,
+						'type' => 'string',
+					],
+				],
+			]
+		);
 	}
 
-	public function get_suggestions( $request ) : array {
+	/**
+	 * Get suggestions from Fnugg API.
+	 *
+	 * @param string $request Suggestion.
+	 * 
+	 * @return array
+	 */
+	public function get_suggestions( string $request ) : array {
 		$search = $request->get_param( 'search' );
 
 		$url = 'https://api.fnugg.no/suggest/autocomplete/?q=' . $search;
@@ -70,7 +75,14 @@ class Fnugg_API {
 		return $formatted_response;
 	}
 
-	public function get_resort( $request ) : array {
+	/**
+	 * Get resort details from Fnugg API.
+	 * 
+	 * @param string $request Request.
+	 *
+	 * @return array
+	 */
+	public function get_resort( string $request ) : array {
 		$resort = $request->get_param( 'resort' );
 
 		$url = 'https://api.fnugg.no/search?q=' . $resort;
@@ -93,6 +105,7 @@ class Fnugg_API {
 	
 			$formatted_response = [
 				'name' => $source->name,
+				'image_url' => $source->images->image_full,
 				'last_updated' => $current_conditions->last_updated,
 				'condition_description' => $current_conditions->condition_description,
 				'temperature_unit' => $current_conditions->temperature->unit,
@@ -100,7 +113,7 @@ class Fnugg_API {
 				'wind_mps' => $current_conditions->wind->mps
 			];
 	
-			return [ $formatted_response ];
+			return $formatted_response;
 		}
 
 		return [
@@ -108,7 +121,7 @@ class Fnugg_API {
 			'message' => 'No resort by that name',
 		];		
 
-		return [ $json_response ];
+		return $json_response;
 	}
 }
 ?>

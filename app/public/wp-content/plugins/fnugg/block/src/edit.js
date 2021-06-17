@@ -13,12 +13,9 @@ import ServerSideRender from '@wordpress/server-side-render';
 function Edit( {
 	attributes,
 	setAttributes,
-	isSelected,
 } ) {
 	const { resort } = attributes;
 	const [ suggestions, setSuggestions ] = useState( [] );
-
-	console.log(resort);
 
 	const getSuggestions = ( search ) => {
 		if ( search.length > 2 ) {
@@ -49,7 +46,6 @@ function Edit( {
 				</PanelBody>
 			</InspectorControls>
 
-			<div>hello</div>
 			<Disabled>
 				<ServerSideRender
 					block="dekode/fnugg"

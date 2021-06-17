@@ -14,9 +14,9 @@ namespace Dekode\Fnugg\Template;
  *
  * @return string
  */
-function render_template( array $attributes ): string {
-	$resort = isset( $attributes['resort'][0] );
-
+function render_template( array $attributes ) : string {
+	$resort = $attributes['resort'][0];
+	
 	ob_start();
 	if ( ! empty( $resort ) ) {
 	
@@ -24,15 +24,37 @@ function render_template( array $attributes ): string {
 		$response = wp_remote_get( $url );
 
 		$json_response = json_decode( wp_remote_retrieve_body( $response ) );
-		var_dump($json_response[0]->name);
 		$details = $json_response[0];
+		$details = $json_response;
 
 		?>
 		<div class="card">
-			<h1><?php echo $details->name ?></h1>
+			<div class="card-header">
+				<img src="<?php echo $details->image_url ?>">
+				<h2><?php echo $details->name ?></h2>
+				
+				<div>
+					<p>Dagens forhold:</p>
+					<span>Oppdatert: </span> <?php echo $details->last_updated ?>
+				</div>
+			</div>
 
-			<p>Dagens forhold:</p>
-			<span>Oppdatert: </span> <?php echo $details->last_updated ?>
+			<div>
+				<span>Temperatur:</span>
+				<span><?php echo $details->temperature_value ?></span>
+				<span><?php echo $details->temperature_unit?></span>
+			</div>
+
+			<div>
+				<span>Vind:</span>
+				<span><?php echo $details->wind_mps ?></span>
+				</span>m/s</span>
+			</div>
+
+			<div>
+				<span>Forhold:</span>
+				<span><?php echo $details->condition_description ?></span>
+			</div>
 		</div>
 		<?php
 	} else {
